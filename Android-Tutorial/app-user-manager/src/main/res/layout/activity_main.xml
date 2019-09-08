@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="6dp"
+        android:background="#514f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_marginRight="50dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="#5678"
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaa" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/avatar_96"
+            android:text="用户" />
+
+        <RadioButton
+            android:id="@+id/rb_ruler"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rules"
+            android:text="规则" />
+
+        <RadioButton
+            android:id="@+id/rb_add_user"
+            style="@style/rb_style"
+            android:background="@drawable/press_selector"
+            android:drawableTop="@drawable/add_96"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/right_footprint"
+            android:text="记录" />
+
+        <RadioButton
+            android:id="@+id/rb_device_info"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/info_96"
+            android:text="设备信息" />
+    </RadioGroup>
+
+</LinearLayout>

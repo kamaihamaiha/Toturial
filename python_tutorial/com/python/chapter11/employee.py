@@ -1,0 +1,15 @@
+class Employee():
+    """雇员类"""
+
+    def __init__(self,first_name,last_name,salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.salary = salary
+
+
+    """涨工资"""
+    def give_raise(self,raise_value=''):
+        if raise_value:
+            self.salary += raise_value
+        else:
+            self.salary += 5000

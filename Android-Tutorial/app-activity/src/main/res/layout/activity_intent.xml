@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_skip"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="跳 转"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/bt_skip_invisiable"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="跳 转[隐式意图]"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btn_skip_browser"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:text="跳 转[浏览器]"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_skip_call"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="250dp"
+        android:text="跳 转[打电话]"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/cut_off"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/btn_skip_call"
+        android:background="#4d4d4d" />
+
+    <Button
+        android:id="@+id/btn_skip_transmit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cut_off"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="跳 转[向下传递数据]" />
+
+    <Button
+        android:id="@+id/btn_skip_transmit_data_bundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cut_off"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="跳 转[向下传递数据-bundle]" />
+
+    <Button
+        android:id="@+id/btn_skip_transmit_data_obj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cut_off"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="跳 转[传递值-对象]" />
+
+    <Button
+        android:id="@+id/btn_skip_obtain_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cut_off"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="跳 转[获取数据]" />
+
+
+</RelativeLayout>

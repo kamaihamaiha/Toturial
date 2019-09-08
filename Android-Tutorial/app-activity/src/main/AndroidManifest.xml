@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kk.sample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lifecycle.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.MenuActivity" />
+        <activity android:name=".intent.IntentActivity" />
+        <activity android:name=".intent.SecondActivity">
+            <intent-filter>
+                <action android:name="com.kk.intent.second" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.kk.intent.category.HELLO" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.HttpIntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.TelIntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intent.TransmitDataActivity" />
+        <activity android:name=".intent.ReturnDataActivity" />
+
+        <!-- 以下是生命周期的活动 -->
+        <activity android:name=".lifecycle.NormalActivity" />
+        <activity
+            android:name=".lifecycle.DialogActivity"
+            android:theme="@style/Base.Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".SlideActivity"
+            android:label="@string/title_activity_slide"></activity>
+    </application>
+
+</manifest>

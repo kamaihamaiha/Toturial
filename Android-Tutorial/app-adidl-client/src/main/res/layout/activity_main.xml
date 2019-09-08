@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_other_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动服务[别人的]" />
+
+    <Button
+        android:id="@+id/btn_stop_other_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="停止服务[别人的]" />
+
+    <Button
+        android:id="@+id/btn_bind_other_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="绑定服务[别人的]" />
+
+    <Button
+        android:id="@+id/btn_unbind_other_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="解除绑定服务[别人的]" />
+
+    <Button
+        android:id="@+id/btn_buy_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="200dp"
+        android:text="买票" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发："
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_start_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:hint="城市" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到达："
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_end_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:hint="城市" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tv_ticket_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5923"
+            android:padding="60dp" />
+    </ScrollView>
+
+
+</RelativeLayout>

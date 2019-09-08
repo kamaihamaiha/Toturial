@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/clock.dir/main.cpp.o  -o clock 

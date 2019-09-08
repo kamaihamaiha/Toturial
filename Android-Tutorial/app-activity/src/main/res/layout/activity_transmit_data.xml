@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/tv_intent_trans_value_title"
+        android:layout_marginTop="50dp"
+        android:text="Intent 传递的值：" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        style="@style/tv_intent_trans_value_style"
+        android:layout_marginTop="100dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:background="#777" />
+
+    <TextView
+        style="@style/tv_intent_trans_value_title"
+        android:layout_marginTop="180dp"
+        android:text="Bundle 传递的值：" />
+
+    <TextView
+        android:id="@+id/tv_bundle_data"
+        style="@style/tv_intent_trans_value_style"
+        android:layout_marginTop="230dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:background="#777" />
+
+    <TextView
+        style="@style/tv_intent_trans_value_title"
+        android:layout_marginTop="280dp"
+        android:text="序列话(Serializable) 传递的值：" />
+
+    <TextView
+        android:id="@+id/tv_serializable_data"
+        style="@style/tv_intent_trans_value_style"
+        android:layout_marginTop="320dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:background="#777" />
+
+    <TextView
+        style="@style/tv_intent_trans_value_title"
+        android:layout_marginTop="370dp"
+        android:text="序列话(Parcelable) 传递的值：" />
+
+    <TextView
+        android:id="@+id/tv_parcelable_data"
+        style="@style/tv_intent_trans_value_style"
+        android:layout_marginTop="410dp" />
+</RelativeLayout>

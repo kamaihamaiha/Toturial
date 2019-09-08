@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/title" />
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="show viewpager"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="please input word..."
+        android:maxLines="2"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="notification"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="alert dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="progress dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_percent_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="percent layout"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_show_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="toast"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_slide_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="slide menu"
+        android:textAllCaps="false" />
+
+    <com.kk.ui.view.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+    </com.kk.ui.view.TitleLayout>
+</RelativeLayout>

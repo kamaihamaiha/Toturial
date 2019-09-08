@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp">
+
+    <Button
+        android:id="@+id/btn_start_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="start_normal"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="start_dialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="start_web"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_intent_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="start_intent_activity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_start_slide_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="start_slide_activity"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

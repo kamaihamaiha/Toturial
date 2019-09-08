@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app-ui</string>
+
+    <string name="red">红</string>
+    <string name="blue">蓝</string>
+    <string name="green">绿</string>
+</resources>

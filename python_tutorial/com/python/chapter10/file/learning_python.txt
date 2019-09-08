@@ -1,0 +1,11 @@
+In Python you can opera string
+In Python you can opera number
+In Python you can use if content
+In Python you can use else content
+In Python you can use dict
+In Python you can use input()
+In Python you can use int()
+In Python you can use while
+In Python you can use function
+In Python you can define class
+In Python you can read file
