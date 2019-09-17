@@ -1,4 +1,4 @@
-package com.kk.mvc.bean;
+package com.kk.mvp.bean;
 
 public class LoginInfo {
     private String userName;

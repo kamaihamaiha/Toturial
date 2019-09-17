@@ -1,6 +1,5 @@
-package com.kk.mvc.util;
+package com.kk.mvp.util;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

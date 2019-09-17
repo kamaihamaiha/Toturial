@@ -1,6 +1,12 @@
 package com.kk.mvvm.bean;
 
-public class LoginInfo {
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
+
+import com.android.databinding.library.baseAdapters.BR;
+
+
+public class LoginInfo extends BaseObservable {
     private String userName;
     private int age;
 
@@ -12,19 +18,24 @@ public class LoginInfo {
         this.age = age;
     }
 
+    @Bindable
     public String getUserName() {
         return userName;
     }
 
     public void setUserName(String userName) {
         this.userName = userName;
+        notifyPropertyChanged(BR._all);
     }
 
+    @Bindable
     public int getAge() {
         return age;
     }
 
+
     public void setAge(int age) {
         this.age = age;
+        notifyPropertyChanged(BR._all);
     }
 }
