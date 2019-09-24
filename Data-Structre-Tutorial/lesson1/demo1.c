@@ -116,7 +116,7 @@ int sum1(int *max_sum,int *nums,int count)
 		return 0;
 }
 
-//在线求法
+//在线处理求法
 
 int sum2(int *max_sum,int *nums,int count)
 {

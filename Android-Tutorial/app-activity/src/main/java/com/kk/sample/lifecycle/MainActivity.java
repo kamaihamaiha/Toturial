@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.btn_start_web).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://jikexueyuan.com")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://jikexueyuan.com")));
             }
         });
         findViewById(R.id.btn_start_intent_activity).setOnClickListener(new View.OnClickListener() {
