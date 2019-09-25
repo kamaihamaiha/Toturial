@@ -2,21 +2,25 @@ package com.kk.animation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textView = findViewById(R.id.tv_trans);
+        textView = findViewById(R.id.tv_trans);
 
 //        AnimUtil.startTrans(textView);
 //        AnimUtil.startScale(textView);
-        AnimUtil.startRotate(textView);
+//        AnimUtil.startAlpha(this, textView);
+        AnimUtil.startAnimWithInterpolator(this,textView);
+
+
     }
 }

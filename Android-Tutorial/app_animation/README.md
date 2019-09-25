@@ -19,8 +19,20 @@
 - 渐进 (alpha)
 
 #### 4. 具体使用
-分为 2 种： 在 XML / Java 
+分为 2 种： 在 XML / Java 都可以
 
+---
+#### 5. 组合动画
+...
+#### 6. 监听动画
 
+- 为了简洁，不用 AnimatorListener, 用 AnimatorListenerAdapter
+不过没有找到这个 api
 
-
+#### 7. 插值器(Interpolator)
+- 作用： 设置 属性值 从初始值过滤到结束值 的变化规律
+```
+1. 匀速、加速、减速
+2. 确定了动画效果变化的模式
+```
+2 种方式： XML / Java
