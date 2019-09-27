@@ -7,9 +7,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
+import android.view.animation.LayoutAnimationController;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
+import android.widget.ListView;
 
 public class AnimUtil {
 
@@ -98,6 +100,14 @@ public class AnimUtil {
         Interpolator interpolator = AnimationUtils.loadInterpolator(context, R.anim.my_scale_interpolator);
         scale.setInterpolator(interpolator);
         view.startAnimation(scale);
+    }
+
+    public static void startAnimItem(Context context,ListView view){
+        Animation animation = AnimationUtils.loadAnimation(context,R.anim.view_anim);
+        LayoutAnimationController controller = new LayoutAnimationController(animation);
+        controller.setDelay(0.5f);
+        controller.setOrder(LayoutAnimationController.ORDER_NORMAL);
+        view.setLayoutAnimation(controller);
     }
 
 
