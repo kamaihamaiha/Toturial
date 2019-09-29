@@ -6,7 +6,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -15,16 +17,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView textView;
     private Intent intent;
-    private String[] nums = {"1","2","3","4","5"};
+    private String[] nums = {"1", "2", "3", "4", "5"};
     private ListView listView;
+    private ImageView ivFrameAnim;
+    private boolean frameAnimFlag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.tv_trans);
         listView = findViewById(R.id.lv);
+        ivFrameAnim = findViewById(R.id.iv_frame_anim);
 
         intent = new Intent(MainActivity.this, SecondActivity.class);
 
@@ -41,8 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_fragment_anim_sys).setOnClickListener(this);
         findViewById(R.id.btn_fragment_anim_customize).setOnClickListener(this);
         findViewById(R.id.btn_viewGroup_anim).setOnClickListener(this);
+        findViewById(R.id.btn_frame_anim).setOnClickListener(this);
+        findViewById(R.id.btn_property_anim).setOnClickListener(this);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,nums);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, nums);
         listView.setAdapter(adapter);
     }
 
@@ -101,7 +111,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 transaction2.commit();
                 break;
             case R.id.btn_viewGroup_anim:
-                AnimUtil.startAnimItem(MainActivity.this,listView);
+                AnimUtil.startAnimItem(MainActivity.this, listView);
+                break;
+            case R.id.btn_frame_anim:
+                if (!frameAnimFlag) {
+                    AnimUtil.startFrameAnim(ivFrameAnim);
+                } else {
+                    AnimUtil.stopFrameAnim(ivFrameAnim);
+                }
+                frameAnimFlag = !frameAnimFlag;
+                break;
+            case R.id.btn_property_anim:
+                startActivity(new Intent(MainActivity.this,PropertyAnimActivity.class));
                 break;
         }
     }

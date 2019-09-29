@@ -1,6 +1,8 @@
 package com.kk.animation;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -11,10 +13,13 @@ import android.view.animation.LayoutAnimationController;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 public class AnimUtil {
 
+
+    private static AnimationDrawable animationDrawable;
 
     public static void startTrans(Context context, View view) {
         Animation trans = AnimationUtils.loadAnimation(context, R.anim.my_trans_anim);
@@ -102,13 +107,40 @@ public class AnimUtil {
         view.startAnimation(scale);
     }
 
-    public static void startAnimItem(Context context,ListView view){
-        Animation animation = AnimationUtils.loadAnimation(context,R.anim.view_anim);
+    public static void startAnimItem(Context context, ListView view) {
+        Animation animation = AnimationUtils.loadAnimation(context, R.anim.view_anim);
         LayoutAnimationController controller = new LayoutAnimationController(animation);
         controller.setDelay(0.5f);
         controller.setOrder(LayoutAnimationController.ORDER_NORMAL);
         view.setLayoutAnimation(controller);
     }
 
+    public static void startFrameAnim(ImageView iv) {
+        iv.setImageResource(R.drawable.kongfu);
+        animationDrawable = (AnimationDrawable) iv.getDrawable();
+        animationDrawable.start();
+    }
+
+    public static void stopFrameAnim(ImageView iv) {
+        animationDrawable.setOneShot(true);
+        iv.setImageDrawable(animationDrawable);
+        animationDrawable.stop();
+    }
+
+    public static void startPropertyAnim(final View view){
+        ValueAnimator va = ValueAnimator.ofInt(view.getLayoutParams().width,500);
+        va.setDuration(2000);
+        va.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                int curValue = (int) valueAnimator.getAnimatedValue();
+                System.out.println("curValue = " + curValue);
+                view.getLayoutParams().width = curValue;
+                view.requestLayout();
+            }
+        });
+        //启动动画
+        va.start();
+    }
 
 }
