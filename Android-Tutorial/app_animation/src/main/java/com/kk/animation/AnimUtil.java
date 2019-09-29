@@ -1,5 +1,7 @@
 package com.kk.animation;
 
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -127,8 +129,12 @@ public class AnimUtil {
         animationDrawable.stop();
     }
 
-    public static void startPropertyAnim(final View view){
-        ValueAnimator va = ValueAnimator.ofInt(view.getLayoutParams().width,500);
+    /**
+     * 开启属性动画，ValueAnimator 通过 Java
+     * @param view
+     */
+    public static void startPropertyAnim(final View view) {
+        ValueAnimator va = ValueAnimator.ofInt(view.getLayoutParams().width, 500);
         va.setDuration(2000);
         va.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -141,6 +147,26 @@ public class AnimUtil {
         });
         //启动动画
         va.start();
+    }
+
+    /**
+     * 开启属性动画, ValueAnimator 通过 Xml
+     * @param context
+     * @param view
+     */
+    public static void startPropertyAnim(Context context, final View view) {
+        ValueAnimator animator = (ValueAnimator) AnimatorInflater.loadAnimator(context, R.animator.my_value_anim);
+        animator.setTarget(view);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                int curValue = (int) valueAnimator.getAnimatedValue();
+                System.out.println("curValue = " + curValue);
+                view.getLayoutParams().width = curValue;
+                view.requestLayout();
+            }
+        });
+        animator.start();
     }
 
 }

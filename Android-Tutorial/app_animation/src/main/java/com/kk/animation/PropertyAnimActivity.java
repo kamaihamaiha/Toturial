@@ -18,6 +18,7 @@ public class PropertyAnimActivity extends AppCompatActivity {
 
         TextView tvProperty = findViewById(R.id.tv_property);
 
-        AnimUtil.startPropertyAnim(tvProperty);
+//        AnimUtil.startPropertyAnim(tvProperty);
+        AnimUtil.startPropertyAnim(this,tvProperty);
     }
 }
