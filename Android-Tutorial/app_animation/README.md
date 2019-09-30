@@ -60,6 +60,26 @@
 - 在一定时间间隔内，不断对值进行改变，同时把该变化的值赋值给对象的属性，从而实现该对象在该属性上的动画效果
 - 2 个重要的类： ValueAnimator, ObjectAnimator
 
+### 2.3 练习
+自定义 对象属性实现动画效果。见：MyCircle , MyCircle2
+
+### 2.4 ViewPropertyAnimator 
+这是个 view 对象的自带属性，直接调用即可.不需要 start(),直接就能生效
+```
+view.animator().alpha().setDuration().setInterpolator
+view.animator().translationX().setDuration().setInterpolator
+...
+```
+### 2.5 animation listener
+- addListener()
+```
+# kind1
+AnimatorListener()
+# kind2
+AnimatorListenerAdapter()
+
+```
+
 
 
 
