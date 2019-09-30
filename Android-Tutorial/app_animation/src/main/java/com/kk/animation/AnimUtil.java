@@ -2,6 +2,10 @@ package com.kk.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.FloatEvaluator;
+import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -17,6 +21,8 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.kk.animation.widget.ColorEvaluator;
 
 public class AnimUtil {
 
@@ -82,7 +88,7 @@ public class AnimUtil {
 
         Animation rotate = new RotateAnimation(0, 277, Animation.RELATIVE_TO_SELF,
                 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        rotate.setDuration(1000);
+        rotate.setDuration(2000);
 
         Animation trans = new TranslateAnimation(0, 500, 0, 500);
         trans.setDuration(3000);
@@ -131,9 +137,10 @@ public class AnimUtil {
 
     /**
      * 开启属性动画，ValueAnimator 通过 Java
+     *
      * @param view
      */
-    public static void startPropertyAnim(final View view) {
+    public static void startValueAnim(final View view) {
         ValueAnimator va = ValueAnimator.ofInt(view.getLayoutParams().width, 500);
         va.setDuration(2000);
         va.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -151,10 +158,11 @@ public class AnimUtil {
 
     /**
      * 开启属性动画, ValueAnimator 通过 Xml
+     *
      * @param context
      * @param view
      */
-    public static void startPropertyAnim(Context context, final View view) {
+    public static void startValueAnim(Context context, final View view) {
         ValueAnimator animator = (ValueAnimator) AnimatorInflater.loadAnimator(context, R.animator.my_value_anim);
         animator.setTarget(view);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -168,5 +176,151 @@ public class AnimUtil {
         });
         animator.start();
     }
+
+    public static void startObjectAnimAlpha(View view) {
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "alpha", 1f, 1.0f, 0.3f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjectAnimRotate(View view) {
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "rotation", 1f, 0f, 300f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjectAnimRotateX(View view) {
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "rotationX", 1f, 0f, 300f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjectAnimRotateY(View view) {
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "rotationY", 1f, 0f, 300f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjectAnimTransX(View view) {
+        float curTranslationX = view.getTranslationX();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "translationX", curTranslationX, 300f, curTranslationX);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjectAnimTransY(View view) {
+        float curTranslationY = view.getTranslationY();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "translationY", curTranslationY, 300f, curTranslationY);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjAnimScaleX(View view) {
+        float scaleX = view.getScaleX();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "scaleX", scaleX, 2f, scaleX, 0.5f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjAnimScaleY(View view) {
+        float scaleY = view.getScaleY();
+        ObjectAnimator oa = ObjectAnimator.ofFloat(view, "scaleY", scaleY, 2f, scaleY, 0.5f);
+        oa.setDuration(3000);
+        oa.setStartDelay(500);
+        oa.setRepeatCount(0);
+        oa.setRepeatMode(ValueAnimator.RESTART);
+
+        oa.start();
+    }
+
+    public static void startObjAnimSet(View view) {
+        float curTranslationY = view.getTranslationY();
+        ObjectAnimator transAnim = ObjectAnimator.ofFloat(view, "translationY",
+                curTranslationY, curTranslationY + 100, curTranslationY);
+        transAnim.setDuration(2000);
+
+        ObjectAnimator rotateAnim = ObjectAnimator.ofFloat(view, "rotationX", 1f, 0f, 300f);
+        rotateAnim.setDuration(2000);
+
+        float scaleX = view.getScaleX();
+        ObjectAnimator scaleAnim = ObjectAnimator.ofFloat(view, "scaleX", scaleX, 2f, scaleX, 0.5f);
+        scaleAnim.setDuration(3000);
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.play(transAnim).after(rotateAnim).with(scaleAnim);
+        animatorSet.start();
+
+    }
+
+    public static void startObjAnimSet(Context context,View view){
+        AnimatorSet animatorSet = (AnimatorSet) AnimatorInflater.loadAnimator(context,R.animator.my_obj_set_anim);
+        animatorSet.setTarget(view);
+        animatorSet.start();
+    }
+
+    public static void startObjectAnimAlpha(Context context, View view) {
+        Animator animator = AnimatorInflater.loadAnimator(context, R.animator.my_obj_alpha_anim);
+        animator.setTarget(view);
+        animator.start();
+    }
+
+    public static void startObjectAnimTransX(Context context, View view) {
+        Animator animator = AnimatorInflater.loadAnimator(context, R.animator.my_obj_transx_anim);
+        animator.setTarget(view);
+        animator.start();
+    }
+
+    public static void startObjectAnimScaleX(Context context, View view) {
+        Animator animator = AnimatorInflater.loadAnimator(context, R.animator.my_obj_scale_anim);
+        animator.setTarget(view);
+        animator.start();
+    }
+
+    public static void startObjectAnimRotate(Context context, View view) {
+        Animator animator = AnimatorInflater.loadAnimator(context, R.animator.my_obj_rotate_anim);
+        animator.setTarget(view);
+        animator.start();
+    }
+
+    /**
+     * 自定义view + 估值器播放 animation
+     *
+     * @param view
+     */
+    public static void startMyCircle2Anim(View view) {
+        ObjectAnimator animator = ObjectAnimator.ofObject(view, "color", new ColorEvaluator(),
+                "#0000FF", "#FF0000");
+        animator.setDuration(5000);
+        animator.start();
+    }
+
 
 }

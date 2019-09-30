@@ -9,12 +9,159 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:background="#8357"
-        android:text="property anim"
         android:id="@+id/tv_property"
         android:layout_width="200px"
-        android:layout_height="120px" />
+        android:layout_height="120px"
+        android:layout_centerInParent="true"
+        android:background="#8357"
+        android:gravity="center"
+        android:text="property anim" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_start_value_anim_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start value anim java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_value_anim_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start value anim xml"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_alpha_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim alpha java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_rotate_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim rotate java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_rotateX_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim rotateX java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_rotateY_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim rotateY java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_transX_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim transX java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_transY_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim transY java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_scaleX_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim scaleX java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_scaleY_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim scaleY java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_alpha_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim alpha xml"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_transX_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim transX xml"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_rotate_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim rotate xml"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_scaleX_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim scaleX xml"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_and_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start mycircle2 anim"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_set_java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim set java"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_start_obj_anim_set_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start obj anim set xml"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <com.kk.animation.widget.MyCircle2
+            android:id="@+id/myCircle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
