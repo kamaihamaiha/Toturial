@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvc/src/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvc/src/androidTest/androidTest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_test/src/androidTest/androidTest10.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_test/src/androidTest/androidTest10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/androidTest/androidTest11.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/androidTest/androidTest11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/androidTest/androidTest12.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/androidTest/androidTest12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-activity/src/androidTest/androidTest13.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-activity/src/androidTest/androidTest13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-fragment/src/androidTest/androidTest14.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-fragment/src/androidTest/androidTest14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/androidTest/androidTest15.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/androidTest/androidTest15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/androidTest/androidTest16.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/androidTest/androidTest16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/androidTest/androidTest17.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/androidTest/androidTest17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/androidTest/androidTest18.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/androidTest/androidTest18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-service/src/androidTest/androidTest19.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-service/src/androidTest/androidTest19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/androidTest/androidTest2.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/androidTest/androidTest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-ui/src/androidTest/androidTest20.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-ui/src/androidTest/androidTest20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_animation/src/androidTest/androidTest21.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_animation/src/androidTest/androidTest21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-permission/src/androidTest/androidTest22.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-permission/src/androidTest/androidTest22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/androidTest/androidTest3.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/androidTest/androidTest3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-autostart/src/androidTest/androidTest4.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-autostart/src/androidTest/androidTest4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/androidTest/androidTest5.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/androidTest/androidTest5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/androidTest/androidTest6.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/androidTest/androidTest6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvp/src/androidTest/androidTest7.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvp/src/androidTest/androidTest7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_data_save/src/androidTest/androidTest8.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_data_save/src/androidTest/androidTest8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/androidTest/androidTest9.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/androidTest/androidTest9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvc/src/main/main.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvc/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-permission/src/main/main1.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-permission/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_data_save/src/main/main10.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_data_save/src/main/main10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/main/main11.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/main/main11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/main/main12.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/main/main12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-ui/src/main/main13.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-ui/src/main/main13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_test/src/main/main14.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_test/src/main/main14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-fragment/src/main/main15.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-fragment/src/main/main15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/main/main16.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/main/main16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_animation/src/main/main17.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_animation/src/main/main17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/main/main18.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/main/main18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-activity/src/main/main19.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-activity/src/main/main19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/main/main2.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/main/main20.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/main/main20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvp/src/main/main21.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvp/src/main/main21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-autostart/src/main/main22.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-autostart/src/main/main22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-service/src/main/main23.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-service/src/main/main23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/main/main3.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/main/main4.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NDK-Toturial/app_androidmk/src/main/main5.iml" filepath="$PROJECT_DIR$/NDK-Toturial/app_androidmk/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/main/main6.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/main/main7.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/main/main7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/main/main8.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/main/main8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/main/main9.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/main/main9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/test/test.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-aidl-server/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-autostart/src/test/test1.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-autostart/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-activity/src/test/test10.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-activity/src/test/test10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/test/test11.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvvm/src/test/test11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-permission/src/test/test12.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-permission/src/test/test12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/test/test13.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-start-other-service/src/test/test13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/test/test14.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast2/src/test/test14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-service/src/test/test15.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-service/src/test/test15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_animation/src/test/test16.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_animation/src/test/test16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvc/src/test/test17.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvc/src/test/test17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/test/test18.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-adidl-client/src/test/test18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_mvp/src/test/test19.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_mvp/src/test/test19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_data_save/src/test/test2.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_data_save/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/test/test20.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-user-manager/src/test/test20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/test/test21.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-multi-media/src/test/test21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_test/src/test/test22.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_test/src/test/test22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-fragment/src/test/test3.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-fragment/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/test/test4.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-download-apk/src/test/test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/test/test5.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app_rxjava/src/test/test5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/test/test6.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-force-offline/src/test/test6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/test/test7.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-broadcast/src/test/test7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/test/test8.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-content-provider/src/test/test8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-Tutorial/app-ui/src/test/test9.iml" filepath="$PROJECT_DIR$/Android-Tutorial/app-ui/src/test/test9.iml" />
+    </modules>
+  </component>
+</project>

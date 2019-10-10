@@ -1,12 +1,10 @@
 package com.kk.auto;
 
-import android.content.Context;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.kk.auto.broadcast.NetworkStateReceiver;
 /**

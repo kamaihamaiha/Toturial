@@ -1,4 +1,4 @@
-include ':app-activity', ':app-ui', ':app-fragment', ':app-broadcast', ':app-broadcast2', ':app_mvc', ':app_mvp', ':app_mvvm', ':app_test', ':app_rxjava', ':app_animation',
+include ':app-activity', ':app-ui', ':app-fragment', ':app-broadcast', ':app-broadcast2', ':app_mvc', ':app_mvp', ':app_mvvm', ':app_test', ':app_rxjava', ':app_animation', ':app_multi-thread', ':app_socket',
         ':app-service', ':app-aidl-server', ':app-adidl-client', ':app-multi-media',
         ':app-permission', ':app-user-manager', ':app-start-other-service', ':app-force-offline',
         ':app_data_save', ':app-content-provider', ':app-autostart', ':app-download-apk'

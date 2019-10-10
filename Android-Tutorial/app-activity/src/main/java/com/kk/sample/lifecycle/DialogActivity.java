@@ -1,8 +1,8 @@
 package com.kk.sample.lifecycle;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.kk.sample.R;
 import com.kk.sample.base.BaseActivity;
