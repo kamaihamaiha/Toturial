@@ -4,8 +4,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.support.annotation.Nullable;
-import android.support.annotation.PluralsRes;
+import androidx.annotation.Nullable;
+import androidx.annotation.PluralsRes;
 import android.util.Log;
 
 

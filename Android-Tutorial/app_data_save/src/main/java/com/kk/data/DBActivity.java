@@ -5,17 +5,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
 import com.kk.data.adapter.BookAdapter;
 import com.kk.data.bean.Book;
 import com.kk.data.callback.DBOperaListener;
-import com.kk.data.db.SQLiteExecutor;
 import com.kk.data.db.SQLiteExecutor;
 
 import java.util.ArrayList;
