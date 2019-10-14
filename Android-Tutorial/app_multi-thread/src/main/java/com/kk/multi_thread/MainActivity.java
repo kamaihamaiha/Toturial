@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //创建 handlerThread
         HandlerThread mHandlerThread = new HandlerThread("handlerThread");
 
+
         mHandlerThread.start();
 
         mainHandler = new Handler();
