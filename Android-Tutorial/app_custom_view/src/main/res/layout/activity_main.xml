@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_day1"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:text="图形操作"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btn_day2"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:text="画布操作"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btn_day3"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:text="画布操作-图片文字"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_day4"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:text="Path 基本操作"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_day5"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:text="Path 贝塞尔曲线"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
+
+</LinearLayout>

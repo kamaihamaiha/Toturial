@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TaijiView">
+        <attr name="rotate" format="boolean"/>
+        <attr name="rotate_level" format="enum">
+            <enum name="NORMAL" value="2"/>
+            <enum name="LOW" value="2"/>
+            <enum name="HEIGHT" value="4"/>
+        </attr>
+        <attr name="sun_color" format="color"/>
+        <attr name="moon_color" format="color"/>
+    </declare-styleable>
+</resources>
