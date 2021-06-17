@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">app_widget</string>
+    <string name="ting_widget_default_title">精听细读，更好学英语</string>
+    <string name="ting_widget_word">词</string>
 </resources>

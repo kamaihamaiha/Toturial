@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff">
+
+<!--    因为 72dp 比最小的微件高度还要小，所以实际内容在这个布局里面。上面的父布局设置背景透明-->
+    <RelativeLayout
+        android:background="@drawable/bg_widget"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+        <ImageView
+            android:src="@mipmap/icon_english"
+            android:id="@+id/iv_icon"
+            android:layout_width="75dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="@string/ting_widget_default_title"
+            android:textColor="@color/widget_text_body_default_black"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_icon"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <ImageView
+                android:src="@drawable/icon_widget_word_black"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <!--        播放/后退/前进 按钮-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:background="@null"
+                    android:src="@drawable/icon_play_before_black"
+                    android:id="@+id/ib_before"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <ImageButton
+                    android:background="@null"
+                    android:src="@drawable/icon_play_black"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:id="@+id/ib_play_or_pause"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+
+                <ImageButton
+                    android:background="@null"
+                    android:src="@drawable/icon_play_next_black"
+                    android:id="@+id/ib_after"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_timer"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

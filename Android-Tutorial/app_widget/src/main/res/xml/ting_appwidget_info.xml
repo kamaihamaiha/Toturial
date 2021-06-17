@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_layout"
+    android:minWidth="320dp"
+    android:minResizeWidth="320dp"
+    android:minHeight="72dp"
+    android:minResizeHeight="72dp"
+    android:previewImage="@drawable/widget_reciteword_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="3600000"
+    android:widgetCategory="home_screen">
+
+    <!--属性说明-->
+    <!--    initialLayout: 指向用于定义应用微件布局的布局资源。-->
+    <!--    configure: 要在用户添加应用微件时启动以便用户配置应用微件属性的 Activity. 这是可选的-->
+    <!--    previewImage: 指定预览来描绘应用微件经过配置后是什么样子的，用户在选择应用微件时会看到该预览。如果未提供，
+    则用户会看到应用的启动器图标。此字段对应于 AndroidManifest.xml 文件的 <receiver> 元素中的 android:previewImage 属性-->
+
+    <!--resizeMode: 指定可以按什么规则来调整微件的大小。您可以使用此属性来让主屏幕微件在横轴上可调整大小、在纵轴上可调整大小，
+    或者在这两个轴上均可调整大小。用户可轻触并按住微件以显示其大小调整手柄，然后拖动水平和/或垂直手柄以更改布局网格上的大小。
+    resizeMode 属性的值包括“horizontal”、“vertical”和“none”。要将微件声明为在水平和垂直方向上均可调整大小，
+    请提供值“horizontal|vertical”。此属性是在 Android 3.1 中引入的。-->
+
+</appwidget-provider>
