@@ -1,2 +1,3 @@
+include ':app_widget'
 include ':app-activity', ':app-ui', ':app-fragment', ':app-broadcast', ':app-broadcast2', ':app_mvc', ':app_mvp', ':app_mvvm', ':app_test', ':app_rxjava', ':app_animation', ':app_multi-thread', ':app_socket', ':app_design_pattern', ':app_custom_view', ':app_share'
 

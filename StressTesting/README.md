@@ -127,3 +127,11 @@ adb shell monkey --throttle <milliseconds>
 
 ##### 2. Seed 参数
 
+指定随机生成数的 seed 值
+
+语法：
+
+```shell
+adb shell monkey -s <seed> <event-count>
+```
+
